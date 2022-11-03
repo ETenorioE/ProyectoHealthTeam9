@@ -2,8 +2,8 @@
 function resultado() {
     let sumaTotal = 0;
     let contadorPreg = 0;
+    let porcantaje = 0;
     var contador = 0;
-    let porcentaje = 0;
     let respPregunta = new Array();
     let respUser = new Array();
     for (let i = 0; i < 12; i++) {
@@ -19,8 +19,7 @@ function resultado() {
         }
     }
 
+    porcantaje = (100 * contador) / 24;
 
-    porcentaje = (100 * contador) / 24;
-
-    document.getElementById('result').innerHTML = contador + " --->" + porcentaje + "%";
+    document.getElementById('result').innerHTML = contador + " --->" + porcantaje + "%";
 }

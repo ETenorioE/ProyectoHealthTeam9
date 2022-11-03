@@ -3,12 +3,11 @@ function resultado() {
     let sumaTotal = 0;
     let contadorPreg = 0;
     var contador = 0;
-    let porcentaje = 0;
     let respPregunta = new Array();
     let respUser = new Array();
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 18; i++) {
         respPregunta = document.getElementsByName('p' + (i + 1));
-        for (let j = 0; j <= 2; j++) {
+        for (let j = 0; j <= 3; j++) {
             if (respPregunta[j].checked == true) {
 
                 //contadorPreg++;
@@ -20,7 +19,6 @@ function resultado() {
     }
 
 
-    porcentaje = (100 * contador) / 24;
 
-    document.getElementById('result').innerHTML = contador + " --->" + porcentaje + "%";
+    document.getElementById('result').innerHTML = contador;
 }
