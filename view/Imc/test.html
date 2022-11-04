@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST DE IMC</title>
+</head>
+
+<a href="../../index.html">
+    <input type="button" value="Menú">
+</a>
+
+<body>
+
+    <h2>TEST DE IMC</h2>
+
+    <table align="center">
+        <tr>
+            <td>
+                <form action="">
+
+                <h3>NOMBRE</h3> 
+                <input type="text" name="edad" id="nombre">
+                <br><br>                
+                <h3>ALTURA</h3> 
+                <input type="number" placeholder="En metros" id="altura">
+                <br><br>                
+                <h3>PESO ACTUAL</h3> 
+                <input type="number" placeholder="En Kilogramos" id="pesoactual">
+            
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table align="center">
+        <tr>
+            <td>
+                <input type="button" value="CALCULAR IMC" onclick="imc()">
+            </td>
+        </tr>
+    </table>
+
+    <table align="center">
+        <tr>
+            <td>
+                <h2 id="resultado"></h2>
+            </td>
+        </tr>
+    </table>
+
+    <script src="./imc.js"></script>
+    
+</body>
+</html>

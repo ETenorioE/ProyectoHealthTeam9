@@ -1,2 +1,2 @@
 # ProyectoHealthTeam9
-Proyecto Final Unidad 1 con JavaScript del programa Jóvenes Bicentenario 3.0
+Proyecto Final Unidad Didáctica 1 con HTML y JavaScript del programa Jóvenes Bicentenario 3.0

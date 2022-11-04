@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUERZA ABDOMINAL</title>
+</head>
+
+<a href="../../index.html">
+    <input type="button" value="Menú">
+</a>
+
+<body>
+
+    <h2>FUERZA ABDOMINAL</h2>
+
+    <table align="center">
+        <tr>
+            <td>
+                <form action="">
+
+                <h3>NOMBRE</h3> 
+                <input type="text" name="edad" id="nombre">
+                <br><br>
+                <h3>REPETICIONES</h3> 
+                <input type="number" id="repeticiones" placeholder="N° de repeticiones">
+                <br><br>                  
+                <h3>EDAD</h3>
+                <select name="edad" id="edad">
+                    <option value="0" selected>-Seleccionar-</option>
+                    <option value="A">34 O MENOS</option>
+                    <option value="B">35 - 44</option>
+                    <option value="C">45 A MÁS</option>
+                </select> 
+                    
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table align="center">
+        <tr>
+            <td>
+                <input type="button" value="CALCULAR TMB" onclick="fabdom()">
+            </td>
+        </tr>
+    </table>
+
+    <table align="center">
+        <tr>
+            <td>
+                <h2 id="resultado"></h2>
+            </td>
+        </tr>
+    </table>
+
+    <script src="./fabdom.js"></script>
+    
+</body>
+</html>
