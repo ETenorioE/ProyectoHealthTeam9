@@ -17,7 +17,7 @@ function tmb() {
 
 
     if (d == "M") {
-        tmb = (10 * b) + (6.25 * c) - (5 * a) + 5 
+        tmb = (10 * b) + (6.25 * c) - (5 * a) + 5
     }
     else if (d == "F") {
         tmb = (10 * b) + (6.25 * c) - (5 * a) - 161
@@ -26,8 +26,12 @@ function tmb() {
         tmb = 0
     }
 
-    document.getElementById("resultado").innerHTML = "USUARIO: <br><br>" + nombre + "<br><br>APROXIMADAMENTE, USTED REQUIERE: <br><br>" + tmb + " Kcal por día";
+    document.getElementById("titulo1").innerHTML = "ESTIMADO/A USUARIO/A:";
+    document.getElementById("resultado1").innerHTML = nombre;
+    document.getElementById("titulo2").innerHTML = "APROXIMADAMENTE USTED REQUIERE:";
+    document.getElementById("resultado2").innerHTML = tmb + " Kcal por día";
+    document.getElementById("resultado2").style.color = "green";
 
-    
-   
+
+
 }

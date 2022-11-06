@@ -5,56 +5,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAR-TEAM</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+        .text-white {
+            text-decoration: none;
+        }
+
+        .card-body {
+            background-color: rgb(46, 191, 99);
+        }
+
+        a div {
+            transition: all 300ms;
+        }
+
+        a div:hover {
+            transform: scale(1.05);
+        }
+
+        #titulodepag {
+            font-size: 35px;
+        }
+    </style>
+
+    <title>EVALÚE SU SALUD FÍSICA</title>
 </head>
 
+<a href="../../index.html">
+    <input class="btn btn-success" type="button" value="MENÚ">
+</a>
+
 <body>
-    <h3>Menú de Pruebas de Salud Física</h3>
-    <table border="1" align="center">
+    <div class="container text-left" style="max-width: 1600px;">
+        <div class="row">
+            <div class="col">
+                <br><br><br>
+                <h1 id="titulodepag">PRUEBAS PARA SU <strong style="color: green;">SALUD FÍSICA 🍎: </strong></h1>
+            </div>
+        </div>
+    </div>
 
-        <tr>
-            <td><a href="/view/EstadoSalud/index.html">
-                <input type="button" value="Estado de Salud">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="/view/TestResistencia/index.html">
-                <input type="button" value="Test de Resistencia">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/view/Imc/index.html">
-                <input type="button" value="Test de Indice de Masa Corporal">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/view/Tmb/index.html">
-                <input type="button" value="Test de Tasa metabolica basal">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/view/FuerzaAbdom/index.html">
-                <input type="button" value="Fuerza abdominal">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/view/FuerzaBrazo/index.html">
-                <input type="button" value="Fuerza en Brazos">
-                </a>
-            </td>
-        </tr>
+    <br><br><br><br><br><br>
 
-    </table>
+    <div class="container text-center" style="max-width: 1500px;">
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="/view/EstadoSalud/index.html" class="text-white">
+                    <div class="card mb-3" style="max-width: 400px;">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="card-body rounded-start">
+                                    <br><br>
+                                    <h5>ESTADO DE <strong>SALUD</strong></h5>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-4" style="width: 120px;">
+                                <img src="/src/img/eduardo_img/test_salud.jpg" class="img-fluid rounded-start">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/view/Imc/index.html" class="text-white">
+                    <div class="card mb-3" style="max-width: 400px;">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="card-body rounded-start">
+                                    <br><br>
+                                    <h5><strong>IMC</strong></h5>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-4" style="width: 120px;">
+                                <img src="/src/img/sebastian_img/imcboton.jpg" class="img-fluid rounded-start">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/view/Tmb/index.html" class="text-white">
+                    <div class="card mb-3" style="max-width: 400px;">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="card-body rounded-start">
+                                    <br><br>
+                                    <h5><strong>TMB</strong></h5>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="width: 120px;">
+                                <img src="/src/img/sebastian_img/tmbboton.jpg" class="img-fluid rounded-start"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
+    <br><br><br>
+
+    <div class="container text-center" style="max-width: 1500px;">
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="/view/TestResistencia/index.html" class="text-white">
+                    <div class="card mb-3" style="max-width: 400px;">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="card-body rounded-start">
+                                    <br><br>
+                                    <h5><strong>RESISTENCIA</strong></h5>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-4" style="width: 120px;">
+                                <img src="/src/img/eduardo_img/cooper.jpg" class="img-fluid rounded-start">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/view/FuerzaAbdom/index.html" class="text-white">
+                    <div class="card mb-3" style="max-width: 400px;">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="card-body rounded-start">
+                                    <br><br>
+                                    <h5 class="card-title">FUERZA <strong>ABDOMINAL</strong></h5>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="width: 120px;">
+                                <img src="/src/img/sebastian_img/fabdomboton.jpg" class="img-fluid rounded-start"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/view/FuerzaBrazo/index.html" class="text-white">
+                    <div class="card mb-3" style="max-width: 400px;">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="card-body rounded-start">
+                                    <br><br>
+                                    <h5 class="card-title">FUERZA EN <strong>BRAZOS</strong></h5>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="width: 120px;">
+                                <img src="/src/img/sebastian_img/fbrazoboton.jpg" class="img-fluid rounded-start"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

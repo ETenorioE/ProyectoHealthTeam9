@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        #inflar {
+            transition: all 300ms;
+        }
+
+        #inflar:hover {
+            transform: scale(1.05);
+        }
+    </style>
     <title>FUERZA ABDOMINAL</title>
 </head>
 
 <a href="../../index.html">
-    <input type="button" value="Menú">
+    <input class="btn btn-success" type="button" value="MENÚ">
+</a>
+<a href="/view/FuerzaAbdom/index.html">
+    <input class="btn btn-success" type="button" value="ATRÁS">
 </a>
 
 <body>
-
-    <h2>FUERZA ABDOMINAL</h2>
-
-    <table align="center">
-        <tr>
-            <td>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-6">
+                <br><br><br><br><br><br>
+                <h1 class="wow bounceInDown">FUERZA <strong>ABDOMINAL</strong></h1>
+                <br><br>
                 <form action="">
 
-                <h3>NOMBRE</h3> 
-                <input type="text" name="edad" id="nombre">
-                <br><br>
-                <h3>REPETICIONES</h3> 
-                <input type="number" id="repeticiones" placeholder="N° de repeticiones">
-                <br><br>                  
-                <h3>EDAD</h3>
-                <select name="edad" id="edad">
-                    <option value="0" selected>-Seleccionar-</option>
-                    <option value="A">34 O MENOS</option>
-                    <option value="B">35 - 44</option>
-                    <option value="C">45 A MÁS</option>
-                </select> 
-                    
+                    <h5>NOMBRE</h5>
+                    <input type="text" id="nombre" class="form-control">
+                    <br><br><br>
+                    <h5>REPETICIONES</h5>
+                    <input type="number" id="repeticiones" placeholder="N° de repeticiones" class="form-control">
+                    <br><br><br>
+                    <h5>EDAD</h5>
+                    <select name="edad" id="edad" class="form-select" aria-label="Default select example">
+                        <option value="0" selected>-Seleccionar-</option>
+                        <option value="A">34 O MENOS</option>
+                        <option value="B">35 - 44</option>
+                        <option value="C">45 A MÁS</option>
+                    </select>
+                    <br><br><br>
+                    <input id="inflar" type="button" class="btn btn-success" value="VERIFICAR ESTADO" onclick="fabdom()">
                 </form>
-            </td>
-        </tr>
-    </table>
+            </div>
+            <div class="col">
+                <div align="left">
+                    <br><br><br><br><br><br>
+                    <h2 class="text-secondary">RESULTADO:</h2>
+                    <br><br><br><br><br>
+                </div>
+                <div align="center">
+                    <h3 id="titulo1"></h3>
+                    <br>
+                    <h4 id="resultado1"></h4>
+                    <br><br>
+                    <h3 id="titulo2"></h3>
+                    <br>
+                    <h4 id="resultado2"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <br><br>
+    <br><br><br><br>
 
-    <table align="center">
-        <tr>
-            <td>
-                <input type="button" value="CALCULAR TMB" onclick="fabdom()">
-            </td>
-        </tr>
-    </table>
-
-    <table align="center">
-        <tr>
-            <td>
-                <h2 id="resultado"></h2>
-            </td>
-        </tr>
-    </table>
+    <h5 align="right">🟩</h5>
+    <h5 align="right">🟩🟩</h5>
+    <h5 align="right">🟩🟩🟩</h5>
+    <h5 align="right">🟩🟩🟩🟩</h5>
 
     <script src="./fabdom.js"></script>
-    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
