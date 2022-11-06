@@ -1,105 +1,302 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Test Depresion</title>
-    <style>
-        * {
-            color: #000000;
-            transition: all 0.4s ease;
-        }
-    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./depresion-test.css">
 </head>
 
 <body>
-    <h2>T E S T</h2>
-    <hr>
+    <header>
+        <nav class="navbar" style="background-color: purple;">
+            <div class="container-fluid">
+                <a href="../../index.html">
+                    <img src="../../src/img/jhon_img/heartbeat.png" alt="Logo" width="30" height="24" class="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Test Depresion</h2>
 
-    <p>1. Mi estado de ánimo es</p>
-    <label><input type="radio" name="p1" id="p11" value="0">Por lo general bastante positivo.</label>
-    <label><input type="radio" name="p1" id="p12" value="2">Me causa un auténtico sufrimiento, pues me siento triste la
-        mayor parte del día.
-    </label>
-    <label><input type="radio" name="p1" id="p13" value="1">Últimamente me siento algo triste o melancólico.</label>
+        <div class="contenedor">
+            <div class="preg">
+                <p>1. Mi estado de ánimo es:</p>
+                <div class="form-check ">
 
-    <p>2. Respecto a mis planes de futuro...</p>
-    <label><input type="radio" name="p2" id="p21" value="2">No espero nada de ellos</label>
-    <label><input type="radio" name="p2" id="p22" value="0">Intento ser cauto, pero los miro con optimismo.
-    </label>
-    <label><input type="radio" name="p2" id="p23" value="1">Me siento algo desanimado respecto a cómo me van a ir las
-        cosas.</label>
+                    <input class="form-check-input" type="radio" name="p1" id="p11" value="0">
+                    <label class="form-check-label" for="p11">Por lo general bastante positivo.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p1" id="p12" value="2">
+                    <label class="form-check-label" for="p12">Me causa un auténtico sufrimiento, pues me siento triste
+                        la
+                        mayor parte del día.
+                    </label>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input" type="radio" name="p1" id="p13" value="1">
+                    <label class="form-check-label" for="p13">Últimamente me siento algo triste o
+                        melancólico.</label>
+                </div>
+            </div>
+            <div class="preg">
+                <p>2. Respecto a mis planes de futuro...</p>
 
-    <p>3. Respecto a mis objetivos en la vida</p>
-    <label><input type="radio" name="p3" id="p31" value="0">A pesar de que no hayan podido cumplirse todos me siento
-        bastante satisfecho.
-    </label>
-    <label><input type="radio" name="p3" id="p32" value="1">Pocas cosas de las que he hecho han merecido la pena</label>
-    <label><input type="radio" name="p3" id="p33" value="2"> Me siento un auténtico fracasado como persona.</label>
+                <div class="form-check ">
+                    <input class="form-check-input" type="radio" name="p2" id="p21" value="2">
+                    <label class="form-check-label" for="p21">No espero nada de ellos</label>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input" type="radio" name="p2" id="p22" value="0">
+                    <label class="form-check-label" for="p22">Intento ser cauto, pero los miro con optimismo.</label>
+                </div>
+                <div class="form-check ">
+                    <input type="radio" name="p2" id="p23" class="form-check-input" value="1">
+                    <label class="form-check-label" for="p23">Me siento algo desanimado respecto a cómo me van a
+                        ir las cosas.</label>
+                </div>
+            </div>
 
-    <p>4. Mi día a día…</p>
-    <label><input type="radio" name="p4" id="p41" value="0">Está lleno de anécdotas; unas buenas y otras malas.</label>
-    <label><input type="radio" name="p4" id="p42" value="2">Me aburre muchísimo y nada me interesa.</label>
-    <label><input type="radio" name="p4" id="p43" value="1">Últimamente despierta menos interés para mí.</label>
+            <div class="preg">
+                <p>3. Respecto a mis objetivos en la vida</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p3" id="p31" value="0">
+                    <label class="form-check-label" for="p31">A pesar de que no
+                        hayan podido cumplirse todos me
+                        siento
+                        bastante satisfecho.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p3" id="p32" value="1">
+                    <label class="form-check-label" for="p32">Pocas cosas
+                        de
+                        las que he hecho han merecido la
+                        pena</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p3" id="p33" value="2">
+                    <label class="form-check-label" for="p33"> Me siento un auténtico fracasado como
+                        persona.</label>
+                </div>
+            </div>
 
-    <p>5. Cuando miro hacia atrás y pienso en las decisiones que he tomado o en todo lo que he hecho…</p>
-    <label><input type="radio" name="p5" id="p51" value="0">No me arrepiento de cómo he actuado estos años. Si me he
-        equivocado, ese error me valdrá para aprender.</label>
-    <label><input type="radio" name="p5" id="p52" value="2">Me siento culpable por muchas cosas. No valgo nada.</label>
-    <label><input type="radio" name="p5" id="p53" value="1">Estoy arrepentido de gran parte de las cosas que he
-        hecho.</label>
+            <div class="preg">
+                <p>4. Mi día a día…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p4" id="p41" value="0">
+                    <label class="form-check-label" for="p41">Está lleno de anécdotas; unas buenas y otras
+                        malas.</label>
+                </div>
 
-    <p>6. Cuando me comparo con otras personas…</p>
-    <label><input type="radio" name="p6" id="p61" value="0">A veces gano yo. Otras ganan ellos.</label>
-    <label><input type="radio" name="p6" id="p62" value="1">Siempre salgo mal parado; la mayoría de la gente es mejor
-        que
-        yo.</label>
-    <label><input type="radio" name="p6" id="p63" value="2">Me doy asco</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p4" id="p42" value="2">
+                    <label class="form-check-label" for="p42">Me aburre muchísimo y nada me interesa.</label>
+                </div>
 
-    <p>7. En las dos últimas semanas…</p>
-    <label><input type="radio" name="p7" id="p71" value="2">He llorado prácticamente todos los días.</label>
-    <label><input type="radio" name="p7" id="p72" value="1">Lloro mucho más que antes; casi la mitad de los
-        días.</label>
-    <label><input type="radio" name="p7" id="p73" value="0">No he llorado sin ningún motivo aparente.</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p4" id="p43" value="1">
+                    <label class="form-check-label" for="p43">Últimamente despierta menos interés para mí.</label>
+                </div>
+            </div>
 
-    <p>8. En lo que respecta a mis relaciones sociales…</p>
-    <label><input type="radio" name="p8" id="p81" value="0">Mi interés hacia las mismas no ha sufrido ninguna
-        variación.</label>
-    <label><input type="radio" name="p8" id="p82" value="1">Me intereso por los demás pero menos que antes.</label>
-    <label><input type="radio" name="p8" id="p83" value="2">He perdido el interés por relacionarme con la gente. No me
-        apetece.
-    </label>
+            <div class="preg">
+                <p>5. Cuando miro hacia atrás y pienso en las decisiones que he tomado o en todo lo que he hecho…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p5" id="p51" value="0">
+                    <label class="form-check-label" for="p51">No me
+                        arrepiento de cómo he actuado estos años.
+                        Si me he equivocado, ese error me valdrá para aprender.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p5" id="p52" value="2">
+                    <label class="form-check-label" for="p52">Me siento
+                        culpable por muchas cosas. No
+                        valgo nada.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p5" id="p53" value="1">
+                    <label class="form-check-label" for="p53">Estoy arrepentido de gran parte de las
+                        cosas que
+                        he hecho.</label>
+                </div>
+            </div>
+            <div class="preg">
+                <p>6. Cuando me comparo con otras personas…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p6" id="p61" value="0">
+                    <label class="form-check-label" for="p61">A veces gano yo. Otras ganan ellos.</label>
+                </div>
 
-    <p>9. En lo que respecta a mis hábitos de sueño…</p>
-    <label><input type="radio" name="p9" id="p91" value="1">Me despierto antes o en mitad de la noche y me cuesta volver
-        a dormirme.</label>
-    <label><input type="radio" name="p9" id="p92" value="0">Duermo como siempre</label>
-    <label><input type="radio" name="p9" id="p93" value="2">Duermo mucho más que antes o no pego ojo.</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p6" id="p62" value="1">
+                    <label class="form-check-label" for="p62">Siempre salgo mal parado; la mayoría de la gente
+                        es mejor que yo.</label>
+                </div>
 
-    <p>10. Respecto a mi apetito...</p>
-    <label><input type="radio" name="p10" id="p111" value="2">No me apetece comer nada o no paro de comer.</label>
-    <label><input type="radio" name="p10" id="p112" value="1">Ha variado un poco; como más o no como a penas.</label>
-    <label><input type="radio" name="p10" id="p113" value="0">Es igual que siempre.</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p6" id="p63" value="2">
+                    <label class="form-check-label" for="p63">Me doy asco</label>
+                </div>
 
-    <p>11. Respecto a mi capacidad de trabajo y energía…</p>
-    <label><input type="radio" name="p11" id="p121" value="0">Las cosas me cunden como siempre; ni más ni menos.</label>
-    <label><input type="radio" name="p11" id="p122" value="2">Estoy tan cansado que soy incapaz de hacer nada.</label>
-    <label><input type="radio" name="p11" id="p123" value="1">Siento que mi rendimiento ha disminuido algo sin motivo
-        aparente.</label>
+            </div>
+            <div class="preg">
+                <p>7. En las dos últimas semanas…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p7" id="p71" value="2">
+                    <label class="form-check-label" for="p71">He llorado prácticamente todos los días.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p7" id="p72" value="1">
+                    <label class="form-check-label" for="p72">Lloro mucho más que antes; casi la mitad de
+                        losdías.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p7" id="p73" value="0">
+                    <label class="form-check-label" for="p73">No he llorado sin ningún motivo aparente.</label>
+                </div>
+            </div>
+            <div class="preg">
+                <p>8. En lo que respecta a mis relaciones sociales…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p8" id="p81" value="0">
+                    <label class="form-check-label" for="81">Mi interés hacia las mismas no ha sufrido
+                        ninguna
+                        variación.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p8" id="p82" value="1">
+                    <label class="form-check-label" for="82">Me intereso por los demás pero menos que
+                        antes.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p8" id="p83" value="2">
+                    <label class="form-check-label" for="83">He perdido el interés por relacionarme con
+                        la
+                        gente.No me apetece.
+                    </label>
+                </div>
+            </div>
 
-    <p>12. Mis relaciones sexuales…</p>
-    <label><input type="radio" name="p12" id="p131" value="2">Han desaparecido pues no tengo deseo sexual.</label>
-    <label><input type="radio" name="p12" id="p132" value="0">No presentan variación alguna y si la presenta es porque
-        ha
-        existido algún cambio en la posibilidad de acceder a una pareja.
-    </label>
-    <label><input type="radio" name="p12" id="p133" value="1">Han disminuido de forma notable sin que hayan existido
-        cambios (por ejemplo ausencia de pareja).
-    </label>
+            <div class="preg">
+                <p>9. En lo que respecta a mis hábitos de sueño…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p9" id="p91" value="1">
+                    <label class="form-check-label" for="91">Me despierto antes o en mitad de la noche y me
+                        cuesta volver a dormirme.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p9" id="p92" value="0">
+                    <label class="form-check-label" for="92">Duermo como siempre</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p9" id="p93" value="2">
+                    <label class="form-check-label" for="93">Duermo mucho más que antes o no pego
+                        ojo.</label>
+                </div>
+            </div>
+            <div class="preg">
+                <p>10. Respecto a mi apetito...</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p10" id="p111" value="2">
+                    <label class="form-check-label" for="111">No me apetece comer nada o no paro de
+                        comer.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p10" id="p112" value="1">
+                    <label class="form-check-label" for="112">Ha variado un poco; como más o no como a
+                        penas.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p10" id="p113" value="0">
+                    <label class="form-check-label" for="113">Es igual que siempre.</label>
+                </div>
+            </div>
+            <div class="preg">
+                <p>11. Respecto a mi capacidad de trabajo y energía…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p11" id="p121" value="0">
+                    <label class="form-check-label" for="121">Las cosas me cunden como siempre;
+                        ni más ni
+                        menos.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p11" id="p122" value="2">
+                    <label class="form-check-label" for="122">Estoy tan cansado que soy incapaz
+                        de hacer
+                        nada.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p11" id="p123" value="1">
+                    <label class="form-check-label" for="123">Siento que mi rendimiento ha
+                        disminuido algo sin motivo aparente.</label>
+                </div>
+            </div>
+            <div class="preg">
+                <p>12. Mis relaciones sexuales…</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p12" id="p131" value="2">
+                    <label class="form-check-label" for="p131">Han desaparecido pues no tengo
+                        deseo
+                        sexual.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p12" id="p132" value="0">
+                    <label class="form-check-label" for="p132">No presentan variación alguna y si
+                        la presenta es porque ha existido algún cambio en la posibilidad de acceder a una pareja.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p12" id="p133" value="1">
+                    <label class="form-check-label" for="133">Han disminuido de forma notable
+                        sin que hayan existido cambios (por ejemplo ausencia de pareja).
+                    </label>
+                </div>
+            </div>
 
+        </div>
 
-    <h2>Resultado</h2>
-    <p id="result">rest</p>
-    <button onclick="resultado()">Resultado</button>
+        <!-- Button trigger modal -->
+        <button id="btnModal" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="resultado()">
+            Obtener resultado
+        </button>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Resultado</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="result" class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Devs</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <script src="depresion.js"></script>
 </body>
 

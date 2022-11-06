@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.textos {
+    margin: 10px 5px 0;
+    text-align: center;
+}
+
+ul {
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+
+ul li {
+    margin: 0 20px 0;
+}
+
+a {
+    margin-left: 10%;
+    text-decoration: none;
+}
+
+main .portafolio {
+    margin: 0 2% 0;
+
+    padding: 30px 10px;
+}
+
+main .portafolio .galeria {
+    /*display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;*/
+    margin: 0 10% 0;
+    padding: 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+main .portafolio .galeria .fotos {
+    width: 100%;
+    background-color: white;
+    padding: 10px 30px 15px;
+    margin-bottom: 15px;
+
+
+}
+
+
+main .portafolio .galeria .fotos:hover {
+    box-shadow: 3px 3px 3px grey;
+    border-style: ridge;
+    border-radius: 10px;
+
+}
+
+main .portafolio .galeria .fotos img {
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    border-style: ridge;
+
+    border-radius: 10px;
+}
+
+main .portafolio .galeria .fotos img:hover {
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+footer {
+    margin: 3% 0 0%;
+}
+
+#btnTest {
+
+    margin-left: 50%;
+    margin-bottom: 5%;
+}
+
+.titulo-img {
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 35px;
+}
+
+.texto-img {
+
+    margin: 1% 10% 0;
+    font-size: 20px;
+    text-align: start;
+}

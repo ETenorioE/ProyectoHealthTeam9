@@ -6,134 +6,428 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test ansiedad</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./ansiedad-test.css">
 </head>
-<a href="../../index.html">
-    <input type="button" value="Menú">
-</a>
 
 <body>
-    <h2>T E S T</h2>
-    <hr>
-    <div>
-        <p>Sensación de angustia o aprensión. </p>
-        <label><input type="radio" name="p1" id="p11" value="0"> Nunca</label>
-        <label><input type="radio" name="p1" id="p12" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p1" id="p13" value="2"> A menudo</label>
-        <label><input type="radio" name="p1" id="p14" value="3"> Casi todos los dias</label>
+    <header>
+        <nav class="navbar" style="background-color: purple;">
+            <div class="container-fluid">
+                <a href="../../index.html">
+                    <img src="../../src/img/jhon_img/heartbeat.png" alt="Logo" width="30" height="24" class="">
+                </a>
+            </div>
+        </nav>
+    </header>
 
-        <p>Dificultad para estar quieto, intranquilidad.</p>
-        <label><input type="radio" name="p2" id="p21" value="0"> Nunca</label>
-        <label><input type="radio" name="p2" id="p22" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p2" id="p23" value="2"> A menudo</label>
-        <label><input type="radio" name="p2" id="p24" value="3"> Casi todos los dias</label>
+    <h2>Test Ansiedad</h2>
+    <div class="contenedor">
 
-        <p>Aumento de la frecuencia cardiaca (palpitaciones) sin enfermedad conocida que la justifique.</p>
-        <label><input type="radio" name="p3" id="p31" value="0"> Nunca</label>
-        <label><input type="radio" name="p3" id="p32" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p3" id="p33" value="2"> A menudo</label>
-        <label><input type="radio" name="p3" id="p34" value="3"> Casi todos los dias</label>
+        <div class="preg">
+            <p>1. Sensación de angustia o aprensión. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p11" value="0">
+                <label class="form-check-label" for="11"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p12" value="1">
+                <label class="form-check-label" for="12"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p13" value="2">
+                <label class="form-check-label" for="13"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p14" value="3">
+                <label class="form-check-label" for="14"> Casi todos los dias</label>
+            </div>
 
-        <p>Fatiga, especialmente importante al final del día. </p>
-        <label><input type="radio" name="p4" id="p41" value="0"> Nunca</label>
-        <label><input type="radio" name="p4" id="p42" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p4" id="p43" value="2"> A menudo</label>
-        <label><input type="radio" name="p4" id="p44" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>2. Dificultad para estar quieto, intranquilidad.</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p2" id="p21" value="0">
+                <label class="form-check-label" for="p21"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p2" id="p22" value="1">
+                <label class="form-check-label" for="p22">En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p2" id="p23" value="2">
+                <label class="form-check-label" for="23">A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p2" id="p24" value="3">
+                <label class="form-check-label" for="24">Casi todos los dias</label>
+            </div>
+        </div>
+        <div class="preg">
+            <p>3. Aumento de la frecuencia cardiaca (palpitaciones) sin enfermedad conocida que la justifique.</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p3" id="p31" value="0">
+                <label class="form-check-label" for="31"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p3" id="p32" value="1">
+                <label class="form-check-label" for="32"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p3" id="p33" value="2">
+                <label class="form-check-label" for="33"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p3" id="p34" value="3">
+                <label class="form-check-label" for="34"> Casi todos los dias</label>
+            </div>
 
-        <p>Alteraciones en el sueño; tardas en quedarte dormido, te despiertas varias veces o despiertas antes de lo
-            previsto.</p>
-        <label><input type="radio" name="p5" id="p51" value="0"> Nunca</label>
-        <label><input type="radio" name="p5" id="p52" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p5" id="p53" value="2"> A menudo</label>
-        <label><input type="radio" name="p5" id="p54" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>4. Fatiga, especialmente importante al final del día. </p>
 
-        <p>Sensación de tensión muscular que puede ir acompañada de dolor en determinadas partes de tu cuerpo (cuello,
-            espalda, cabeza, etcétera).</p>
-        <label><input type="radio" name="p6" id="p61" value="0"> Nunca</label>
-        <label><input type="radio" name="p6" id="p62" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p6" id="p63" value="2"> A menudo</label>
-        <label><input type="radio" name="p6" id="p64" value="3"> Casi todos los dias</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p4" id="p41" value="0">
+                <label class="form-check-label" for="41"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p4" id="p42" value="1">
+                <label class="form-check-label" for="42"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p4" id="p43" value="2">
+                <label class="form-check-label" for="43"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p4" id="p44" value="3">
+                <label class="form-check-label" for="44"> Casi todos los dias</label>
+            </div>
+
+        </div>
+        <div class="preg">
+            <p>5. Alteraciones en el sueño; tardas en quedarte dormido, te despiertas varias veces o despiertas antes de
+                lo
+                previsto.</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p5" id="p51" value="0">
+                <label class="form-check-label" for="p51"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p5" id="p52" value="1">
+                <label class="form-check-label" for="52"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p5" id="p53" value="2">
+                <label class="form-check-label" for="53"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p5" id="p54" value="3">
+                <label class="form-check-label" for="54"> Casi todos los dias</label>
+            </div>
+        </div>
+
+        <div class="preg">
+            <p>6. Sensación de tensión muscular que puede ir acompañada de dolor en determinadas partes de tu cuerpo
+                (cuello,
+                espalda, cabeza, etcétera).</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p6" id="p61" value="0">
+                <label class="form-check-label" for="61"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p6" id="p62" value="1">
+                <label class="form-check-label" for="62"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p6" id="p63" value="2">
+                <label class="form-check-label" for="63"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p6" id="p64" value="3">
+                <label class="form-check-label" for="64"> Casi todos los dias</label>
+            </div>
+        </div>
 
         <!---------------------------------------SECCION2----------------------->
-        <p>Dificultad para concentrarte. </p>
-        <label><input type="radio" name="p7" id="p71" value="0"> Nunca</label>
-        <label><input type="radio" name="p7" id="p72" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p7" id="p73" value="2"> A menudo</label>
-        <label><input type="radio" name="p7" id="p74" value="3"> Casi todos los dias</label>
+        <div class="preg">
+            <p>7. Dificultad para concentrarte. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p7" id="p71" value="0">
+                <label class="form-check-label" for="71"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p7" id="p72" value="1">
+                <label class="form-check-label" for="72"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p7" id="p73" value="2">
+                <label class="form-check-label" for="73"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p7" id="p74" value="3">
+                <label class="form-check-label" for="74"> Casi todos los dias</label>
+            </div>
 
-        <p>Sensación de bloqueo mental. </p>
-        <label><input type="radio" name="p8" id="p81" value="0"> Nunca</label>
-        <label><input type="radio" name="p8" id="p82" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p8" id="p83" value="2"> A menudo</label>
-        <label><input type="radio" name="p8" id="p84" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>8. Sensación de bloqueo mental. </p>
 
-        <p>Anticipación de acontecimientos negativos. Castastrofismo. </p>
-        <label><input type="radio" name="p9" id="p91" value="0"> Nunca</label>
-        <label><input type="radio" name="p9" id="p92" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p9" id="p93" value="2"> A menudo</label>
-        <label><input type="radio" name="p9" id="p94" value="3"> Casi todos los dias</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p8" id="p81" value="0">
+                <label class="form-check-label" for="81"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p8" id="p82" value="1">
+                <label class="form-check-label" for="82"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p8" id="p83" value="2">
+                <label class="form-check-label" for="83"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p8" id="p84" value="3">
+                <label class="form-check-label" for="84"> Casi todos los dias</label>
+            </div>
 
-        <p> Falta de memoria (dificultad para recordar cosas). </p>
-        <label><input type="radio" name="p10" id="p111" value="0"> Nunca</label>
-        <label><input type="radio" name="p10" id="p112" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p10" id="p113" value="2"> A menudo</label>
-        <label><input type="radio" name="p10" id="p114" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>9. Anticipación de acontecimientos negativos. Castastrofismo. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p9" id="p91" value="0">
+                <label class="form-check-label" for="91"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p9" id="p92" value="1">
+                <label class="form-check-label" for="92"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p9" id="p93" value="2">
+                <label class="form-check-label" for="93"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p9" id="p94" value="3">
+                <label class="form-check-label" for="94"> Casi todos los dias</label>
+            </div>
 
-        <p>Pensamientos o imágenes desagradables. </p>
-        <label><input type="radio" name="p11" id="p121" value="0"> Nunca</label>
-        <label><input type="radio" name="p11" id="p122" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p11" id="p123" value="2"> A menudo</label>
-        <label><input type="radio" name="p11" id="p124" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>10. Falta de memoria (dificultad para recordar cosas). </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p10" id="p111" value="0">
+                <label class="form-check-label" for="111"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p10" id="p112" value="1">
+                <label class="form-check-label" for="112"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p10" id="p113" value="2">
+                <label class="form-check-label" for="113"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p10" id="p114" value="3">
+                <label class="form-check-label" for="114"> Casi todos los dias</label>
+            </div>
 
-        <p>Dificultad para tomar decisiones (por ejemplo “das vueltas a la cabeza” sin llegar a decidirte). </p>
-        <label><input type="radio" name="p12" id="p131" value="0"> Nunca</label>
-        <label><input type="radio" name="p12" id="p132" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p12" id="p133" value="2"> A menudo</label>
-        <label><input type="radio" name="p12" id="p134" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>11. Pensamientos o imágenes desagradables. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p11" id="p121" value="0">
+                <label class="form-check-label" for="121"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p11" id="p122" value="1">
+                <label class="form-check-label" for="122"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p11" id="p123" value="2">
+                <label class="form-check-label" for="123"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p11" id="p124" value="3">
+                <label class="form-check-label" for="124"> Casi todos los dias</label>
+            </div>
 
+        </div>
+        <div class="preg">
+            <p>12. Dificultad para tomar decisiones (por ejemplo “das vueltas a la cabeza” sin llegar a decidirte). </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p12" id="p131" value="0">
+                <label class="form-check-label" for="131"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p12" id="p132" value="1">
+                <label class="form-check-label" for="132"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p12" id="p133" value="2">
+                <label class="form-check-label" for="133"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p12" id="p134" value="3">
+                <label class="form-check-label" for="134"> Casi todos los dias</label>
+            </div>
+
+        </div>
         <!--SECCION 3-->
-        <p>Fumas, comes o bebes para calmar tu ansiedad. </p>
-        <label><input type="radio" name="p13" id="p141" value="0"> Nunca</label>
-        <label><input type="radio" name="p13" id="p142" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p13" id="p143" value="2"> A menudo</label>
-        <label><input type="radio" name="p13" id="p144" value="3"> Casi todos los dias</label>
+        <div class="preg">
+            <p>13. Fumas, comes o bebes para calmar tu ansiedad. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p13" id="p141" value="0">
+                <label class="form-check-label" for="141"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p13" id="p142" value="1">
+                <label class="form-check-label" for="142"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p13" id="p143" value="2">
+                <label class="form-check-label" for="143"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p13" id="p144" value="3">
+                <label class="form-check-label" for="144"> Casi todos los dias</label>
+            </div>
 
-        <p> Evitas o escapas de determinadas situaciones. </p>
-        <label><input type="radio" name="p14" id="p151" value="0"> Nunca</label>
-        <label><input type="radio" name="p14" id="p152" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p14" id="p153" value="2"> A menudo</label>
-        <label><input type="radio" name="p14" id="p154" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>14. Evitas o escapas de determinadas situaciones. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p14" id="p151" value="0">
+                <label class="form-check-label" for=""> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p14" id="p152" value="1">
+                <label class="form-check-label" for=""> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p14" id="p153" value="2">
+                <label class="form-check-label" for=""> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p14" id="p154" value="3">
+                <label class="form-check-label" for=""> Casi todos los dias</label>
+            </div>
 
-        <p> Haces movimientos repetitivos (tocarte el pelo, temblor de piernas). </p>
-        <label><input type="radio" name="p15" id="p161" value="0"> Nunca</label>
-        <label><input type="radio" name="p15" id="p162" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p15" id="p163" value="2"> A menudo</label>
-        <label><input type="radio" name="p15" id="p164" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>15. Haces movimientos repetitivos (tocarte el pelo, temblor de piernas). </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p15" id="p161" value="0">
+                <label class="form-check-label" for="161"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p15" id="p162" value="1">
+                <label class="form-check-label" for="162"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p15" id="p163" value="2">
+                <label class="form-check-label" for="163"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p15" id="p164" value="3">
+                <label class="form-check-label" for="164"> Casi todos los dias</label>
+            </div>
 
-        <p>Te mueves más de lo habitual. </p>
-        <label><input type="radio" name="p16" id="p171" value="0"> Nunca</label>
-        <label><input type="radio" name="p16" id="p172" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p16" id="p173" value="2"> A menudo</label>
-        <label><input type="radio" name="p16" id="p174" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>16. Te mueves más de lo habitual. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p16" id="p171" value="0">
+                <label class="form-check-label" for="171"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p16" id="p172" value="1">
+                <label class="form-check-label" for="172"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p16" id="p173" value="2">
+                <label class="form-check-label" for="173"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p16" id="p174" value="3">
+                <label class="form-check-label" for="174"> Casi todos los dias</label>
+            </div>
 
-        <p> Movimientos torpes (por ejemplo se te caen las cosas). </p>
-        <label><input type="radio" name="p17" id="p181" value="0"> Nunca</label>
-        <label><input type="radio" name="p17" id="p182" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p17" id="p183" value="2"> A menudo</label>
-        <label><input type="radio" name="p17" id="p184" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>17. Movimientos torpes (por ejemplo se te caen las cosas). </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p17" id="p181" value="0">
+                <label class="form-check-label" for="181"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p17" id="p182" value="1">
+                <label class="form-check-label" for="182"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p17" id="p183" value="2">
+                <label class="form-check-label" for="183"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p17" id="p184" value="3">
+                <label class="form-check-label" for="184"> Casi todos los dias</label>
+            </div>
 
-        <p> Llanto para aliviar tu malestar. </p>
-        <label><input type="radio" name="p18" id="p191" value="0"> Nunca</label>
-        <label><input type="radio" name="p18" id="p192" value="1"> En alguna ocasión.</label>
-        <label><input type="radio" name="p18" id="p193" value="2"> A menudo</label>
-        <label><input type="radio" name="p18" id="p194" value="3"> Casi todos los dias</label>
+        </div>
+        <div class="preg">
+            <p>18. Llanto para aliviar tu malestar. </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p18" id="p191" value="0">
+                <label class="form-check-label" for="191"> Nunca</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p18" id="p192" value="1">
+                <label class="form-check-label" for="192"> En alguna ocasión.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p18" id="p193" value="2">
+                <label class="form-check-label" for="193"> A menudo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p18" id="p194" value="3">
+                <label class="form-check-label" for="194"> Casi todos los dias</label>
+            </div>
 
-        <h2>Resultado</h2>
-        <p id="result">rest</p>
-        <button onclick="resultado()">Resultado</button>
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button id="btnModal" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="resultado()">
+            Obtener resultado
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Resultado</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="result" class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
 
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <script src="ansiedad.js"></script>
 </body>
 
