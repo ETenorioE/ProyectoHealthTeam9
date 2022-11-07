@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Adiccion al Internet</title>
+</head>
+<a href="../../index.html">
+    <button type="button" class="btn btn-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z">
+            </path>
+            <path fill-rule="evenodd"
+                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z">
+            </path>
+        </svg>
+        Ir al Menú
+    </button>
+</a>
+<div></div>
+<body>
+    <h2> Test: mide tu Adiccion al Internet   </h2>
+ 
+    
+    <h4> un buen porcentaje de peruanos tiene dificultades ocasionales para dormir y en una de cada cinco personas el problema se cronifica. Descubre con el test denominado 'índice de severidad del insomnio' si tu falta de sueño es pasajera.
+    </h4>
+    <hr>
+    <div>
+        <p id="parrafo1">1. ¿Sientes la necesidad de utilizar Internet en cantidades crecientes de tiempo con el fin de lograr la satisfacción? </p>
+        <label><input type="radio" name="p1" id="p11" value="0"> No </label>
+        <label><input type="radio" name="p1" id="p12" value="1">  Si </label>
+        
+        <p id="parrafo2">2. ¿Has hecho repetidamente esfuerzos infructuosos para controlar, reducir o detener el uso de Internet?</p>
+        <label><input type="radio" name="p2" id="p21" value="0"> No</label>
+        <label><input type="radio" name="p2" id="p22" value="1"> Si</label>
+        
+
+        <p id="parrafo3">3. ¿Te sientes preocupado por aspectos relacionados con Internet?</p>
+        <label><input type="radio" name="p3" id="p31" value="0"> No</label>
+        <label><input type="radio" name="p3" id="p32" value="1"> Si</label>
+        
+        <p id="parrafo4">4.¿Te mantienes en línea más tiempo de lo previsto originariamente?
+        </p>
+        <label><input type="radio" name="p4" id="p41" value="0"> No</label>
+        <label><input type="radio" name="p4" id="p42" value="1"> Si</label>
+        
+
+
+        <p id="parrafo5" >5.¿Te sientes inquieto, malhumorado, deprimido o irritable al tratar de reducir o detener el uso de Internet?
+        </p>
+        <label><input type="radio" name="p5" id="p51" value="0">  No </label>
+        <label><input type="radio" name="p5" id="p52" value="1">  Si </label>
+        
+
+        <p id="parrafo6">6.Has puesto en peligro o arriesgado la pérdida de una relación significativa, trabajo, oportunidad educativa o profesional debido a Internet?</p>
+        <label><input type="radio" name="p6" id="p61" value="0"> No </label>
+        <label><input type="radio" name="p6" id="p62" value="1"> Si </label>
+        
+
+        <!---------------------------------------SECCION2----------------------->
+        <p id="parrafo7">7.¿Utilizas Internet como una manera de escapar de los problemas o de aliviar un estado de ánimo disfórico? (por ejemplo, sentimientos de impotencia, culpa, ansiedad, depresión) </p>
+        <label><input type="radio" name="p7" id="p71" value="0"> No </label>
+        <label><input type="radio" name="p7" id="p72" value="1"> Si </label>
+
+        <p id="parrafo8">8. ¿Has mentido a los miembros de tu familia, terapeuta u otros para ocultar el grado de implicación con Internet? </p>
+        <label><input  type="radio" name="p8" id="p81" value="0"> No </label>
+        <label><input type="radio" name="p8" id="p82" value="1"> Si </label>
+   
+        
+
+        
+
+        
+        <h5>Si su puntuacion es entre  0 y 4  = se trata Adiccion puntual y no problemático.</h5>
+        <h5>Entre 5 y 6 = Adccion clínico (moderado).</h5>   
+        <h5>Entre 7 y 8 = Adiccion clínico (grave).</h5> 
+    
+        <h4>Resultado</h4>
+       <table border="1" align="center">
+        <p id="result"></p>
+        <button type="button" class="btn btn-primary" onclick="resultado()">Resultado</button>
+        
+    </table>
+    
+    </div>
+
+
+    
+</body>
+<script src="./AdiccionalaWeb.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
