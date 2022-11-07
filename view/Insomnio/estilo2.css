@@ -1,0 +1,33 @@
+#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+body{
+    background-image: url(/src/img/vintage-2721099_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#parrafo1{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+    #parrafo2{
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+        #parrafo3{
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+            #parrafo4{
+                font-size: 20px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+                #parrafo5{
+                    font-size: 20px;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+                    #parrafo6{
+                        font-size: 20px;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+                        #parrafo7{
+                            font-size: 20px;
+                            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
