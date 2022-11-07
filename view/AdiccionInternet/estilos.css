@@ -1,0 +1,33 @@
+#btn-test{
+    margin-top: 20%;
+}
+a{
+    text-decoration: none;
+}
+#contenedor{
+    /*margin-left: 50%;*/
+    display:flex;
+    flex-direction: row-reverse;
+    border-radius: 10%;
+    
+}
+#Parrafo{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#si1{
+    font-size: 70px;
+}
+#p1{
+    margin-left: 15%;
+}
+#Titulo{
+    text-align: center;
+    margin-top: 2%;
+}
+#IMAGEN{
+    border-radius: 10%;
+}
+body{
+    background-image: url(/src/img/arthur_img/vintage-2721099_960_720.jpg);
+}
